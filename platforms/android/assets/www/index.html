@@ -36,15 +36,32 @@
         <title>Hello World</title>
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
+    <div>
+        <video loop autoPlay="true" poster="Sunset-Lapse.jpg">
+            <source src="Sunset-Lapse.mp4" type="video/mp4"/>
+            <source src="Sunset-Lapse.webm" type="video/webm"/>
+        </video>
+        <div id="message">
+            <h1>Welcome to Madonna</h1>
+            <img src="pic.jpg" alt="madonna" width="150">
+            <h3>Audio Player for Madonna</h3>
+            <audio controls="controls">
+                Your browser does not support the <code>audio</code> element.
+                <source src="https://firebasestorage.googleapis.com/v0/b/madonna-e7ed0.appspot.com/o/01%20Like%20a%20Virgin%20(Like%20a%20Virgin).mp3?alt=media&token=4dbcfd6f-7f6c-4764-90b9-c8fe244328eb" type="audio/mp3">
+            </audio>
+            <span id="status"></span>
+
+            <ul>
+                <li><a target="_blank" href="">Play</a></li>
+            </ul>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
                 <p class="event received">Device is Ready</p>
             </div>
-            <p>This is my cordova app!</p>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
     </body>
 </html>
