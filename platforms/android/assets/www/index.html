@@ -1,74 +1,14 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
-<html>
-    <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">-->
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
-    </head>
-    <body>
-    <div>
-        <video loop autoPlay="true" poster="Sunset-Lapse.jpg">
-            <source src="Sunset-Lapse.mp4" type="video/mp4"/>
-            <source src="Sunset-Lapse.webm" type="video/webm"/>
-        </video>
-        <div id="message">
-            <h1>Welcome to Madonna</h1>
-            <img src="pic.jpg" alt="madonna" width="150">
-            <h3>Online --- Audio Player for Madonna</h3>
-            <audio controls="controls">
-                Your browser does not support the <code>audio</code> element.
-                <source src="https://firebasestorage.googleapis.com/v0/b/madonna-e7ed0.appspot.com/o/01%20Like%20a%20Virgin%20(Like%20a%20Virgin).mp3?alt=media&token=4dbcfd6f-7f6c-4764-90b9-c8fe244328eb" type="audio/mp3">
-            </audio>
-
-            <br>
-            <h3>Local --- Audio Player for Madonna</h3>
-            <audio controls="controls">
-                Your browser does not support the <code>audio</code> element.
-                <source src="file:///data/user/0/com.example.hello/files/demons.mp3">
-            </audio>
-            <span id="status"></span>
-
-            <ul>
-                <li><a target="_blank" href="">Play</a></li>
-            </ul>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-    </div>
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
-    </body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Yoguin - App de Meditación</title>
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+<link rel="shortcut icon" href="favicon.ico"></head>
+<body>
+<div id="app"></div>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="index_bundle.ec3eaed99729a7806051.js"></script></body>
 </html>

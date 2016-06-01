@@ -1,12 +1,12 @@
 
 module.exports = function(url, callback) {
-  if (!FileTransfer) {
+  if (typeof FileTransfer == 'undefined') {
     callback(new Error('Device was not ready...'));
     return;
   }
 
   // TODO: crappy... we should hash the url instead
-  var filename = url.substring(url.lastIndexOf('/'));
+  var filename = url.substring(url.lastIndexOf('/') + 1);
 
 
   var fileTransfer = new FileTransfer();
