@@ -44,12 +44,19 @@
         <div id="message">
             <h1>Welcome to Madonna</h1>
             <img src="pic.jpg" alt="madonna" width="150">
-            <h3>Audio Player for Madonna</h3>
+            <h3>Online --- Audio Player for Madonna</h3>
             <audio controls="controls">
                 Your browser does not support the <code>audio</code> element.
                 <source src="https://firebasestorage.googleapis.com/v0/b/madonna-e7ed0.appspot.com/o/01%20Like%20a%20Virgin%20(Like%20a%20Virgin).mp3?alt=media&token=4dbcfd6f-7f6c-4764-90b9-c8fe244328eb" type="audio/mp3">
             </audio>
-            <span id="status"></span>
+
+            <br>
+            <h3>Local --- Audio Player for Madonna</h3>
+            <h4 id="status"></h4>
+            <audio controls="controls">
+                Your browser does not support the <code>audio</code> element.
+                <source src="file:///data/user/0/com.example.hello/files/demons.mp3">
+            </audio>
 
             <ul>
                 <li><a target="_blank" href="">Play</a></li>
@@ -62,5 +69,6 @@
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
     </body>
 </html>

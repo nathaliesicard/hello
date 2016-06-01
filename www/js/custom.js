@@ -8,21 +8,21 @@ document.addEventListener("deviceready", init, false);
 var store;
 
 //Used for status updates
-var $status;
+var status;
 
 //URL of our asset
-var assetURL = "https://madonna-e7ed0.firebaseapp.com/audios/like-a-virgin.mp3";
+var assetURL = "https://madonna-e7ed0.firebaseapp.com/audios/demons.mp3";
 
 //File name of our important data file we didn't ship with the app
-var fileName = "like-a-virgin.mp3";
+var fileName = "demons.mp3";
 
 function init() {
 
   console.log("Init was called");
 
-  $status = document.querySelector("#status");
+  status = document.querySelector("#status");
 
-  $status.innerHTML = "Checking for data file.";
+  status.innerHTML = "Checking for data file.";
 
   store = cordova.file.dataDirectory;
   console.log("store is : ",store);
@@ -48,5 +48,5 @@ function downloadAsset() {
 
 //I'm only called when the file exists or has been downloaded.
 function appStart() {
-  $status.innerHTML = "App ready!";
+  status.innerHTML = "App ready!";
 }

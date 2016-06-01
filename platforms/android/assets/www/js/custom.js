@@ -11,10 +11,10 @@ var store;
 var $status;
 
 //URL of our asset
-var assetURL = "https://madonna-e7ed0.firebaseapp.com/audios/like-a-virgin.mp3";
+var assetURL = "https://madonna-e7ed0.firebaseapp.com/audios/demons.mp3";
 
 //File name of our important data file we didn't ship with the app
-var fileName = "like-a-virgin.mp3";
+var fileName = "demons.mp3";
 
 function init() {
 
